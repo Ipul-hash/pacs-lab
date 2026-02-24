@@ -11,30 +11,23 @@
 @endsection
 
 @section('toolbar-actions')
-    <!--begin::Date range-->
     <div class="me-2">
         <input class="form-control form-control-sm form-control-solid w-170px" placeholder="Pilih tanggal..." id="kt_daterangepicker_1" />
     </div>
-    <!--end::Date range-->
 
-    <!--begin::Refresh-->
     <button class="btn btn-sm btn-icon btn-light btn-active-light-primary me-2" id="btn_refresh" data-bs-toggle="tooltip" title="Refresh Worklist">
         <i class="ki-outline ki-arrows-circle fs-4"></i>
     </button>
-    <!--end::Refresh-->
 
-    <!--begin::New study-->
     <a href="#" class="btn btn-sm fw-bold btn-primary">
         <i class="ki-outline ki-plus fs-4 me-1"></i> Tambah Studi
     </a>
-    <!--end::New study-->
 @endsection
 
 @section('content')
 
 
 <div class="row g-5 g-xl-8 mb-5">
-    <!--begin::Card Pending-->
     <div class="col-sm-6 col-xl-3">
         <div class="card card-flush h-xl-100">
             <div class="card-header pt-5">
@@ -56,9 +49,7 @@
             </div>
         </div>
     </div>
-    <!--end::Card Pending-->
 
-    <!--begin::Card Urgent-->
     <div class="col-sm-6 col-xl-3">
         <div class="card card-flush h-xl-100 border border-danger border-dashed">
             <div class="card-header pt-5">
@@ -82,9 +73,7 @@
             </div>
         </div>
     </div>
-    <!--end::Card Urgent-->
 
-    <!--begin::Card Today-->
     <div class="col-sm-6 col-xl-3">
         <div class="card card-flush h-xl-100">
             <div class="card-header pt-5">
@@ -106,9 +95,7 @@
             </div>
         </div>
     </div>
-    <!--end::Card Today-->
 
-    <!--begin::Card Active-->
     <div class="col-sm-6 col-xl-3">
         <div class="card card-flush h-xl-100">
             <div class="card-header pt-5">
@@ -130,7 +117,6 @@
             </div>
         </div>
     </div>
-    <!--end::Card Active-->
 </div>
 
 <div class="row g-5 g-xl-8">
@@ -138,14 +124,11 @@
     <div class="col-xl-8">
         <div class="card card-flush h-xl-100">
 
-            <!--begin::Card header-->
             <div class="card-header border-0 pt-6">
                 <div class="card-title">
                     <h3 class="fw-bold fs-4 text-gray-900 mb-0">Main Worklist</h3>
                 </div>
-                <!--begin::Card toolbar-->
                 <div class="card-toolbar gap-2">
-                    <!--begin::Filter tabs-->
                     <ul class="nav nav-pills nav-pills-custom" id="worklist_tabs" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link btn btn-outline btn-flex btn-color-muted btn-active-color-primary fw-bold px-4 py-2 active"
@@ -176,16 +159,13 @@
                             </a>
                         </li>
                     </ul>
-                    <!--end::Filter tabs-->
 
-                    <!--begin::Filter button-->
                     <button class="btn btn-sm btn-flex btn-light btn-active-light-primary fw-bold"
                         data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
                         <i class="ki-duotone ki-filter fs-6 text-muted me-1">
                             <span class="path1"></span><span class="path2"></span>
                         </i>Filter
                     </button>
-                    <!--begin::Filter dropdown-->
                     <div class="menu menu-sub menu-sub-dropdown w-300px" data-kt-menu="true">
                         <div class="px-7 py-5">
                             <div class="fs-5 text-gray-900 fw-bold">Filter Worklist</div>
@@ -218,15 +198,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--end::Filter dropdown-->
-                    <!--end::Filter button-->
-
                 </div>
-                <!--end::Card toolbar-->
             </div>
-            <!--end::Card header-->
 
-            <!--begin::Card body-->
             <div class="card-body pt-4">
                 <div class="tab-content">
 
